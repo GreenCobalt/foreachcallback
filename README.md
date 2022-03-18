@@ -4,7 +4,7 @@ A simple package to add the forEachC property to all arrays that lets you perfor
     require("foreachcallback");
     
 	let arr = [0, 1];
-	arr.forEachC((item, resolve) => {
+	arr.forEachC((item, resolve, index) => {
 		//do stuff here
 		let done = item + 1;
 
@@ -19,7 +19,7 @@ A simple package to add the forEachC property to all arrays that lets you perfor
 
 ## Examples / Explanation
     let arr = [0, 1];
-    arr.forEachC((i, resolve) => {
+    arr.forEachC((i, resolve, index) => {
 	    resolve(i + 1);
 	}, (results) => {
 	    console.log(results);
@@ -33,7 +33,7 @@ This might seem fairly useless compared to the default forEach, however where th
 
 It requires many lines of code to create all the promises to only continue execution when you've made a request to all of those. With this package, you can just:
 
-    arr.forEachC((i, resolve) => {
+    arr.forEachC((i, resolve, index) => {
 	    request(i, function(error, request, body) {
 			resolve(body);
 		});

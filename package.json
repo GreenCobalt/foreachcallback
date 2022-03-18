@@ -15,7 +15,9 @@
   "keywords": [
     "foreach",
     "callback",
-    "promises"
+    "promises",
+    "promise",
+    "async"
   ],
   "bugs": {
     "url": "https://github.com/GreenCobalt/foreachcallback/issues"
