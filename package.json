@@ -1,0 +1,11 @@
+{
+  "name": "foreachcallback",
+  "version": "1.0.0",
+  "description": "Provides a nice property on arrays to perform an action on each and then get a callback once all are done. For example, if you want to make a request to a bunch of URLs in an array and then get an array with all the results, this does exactly that.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "GreenCobalt",
+  "license": "ISC"
+}
