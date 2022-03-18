@@ -1,6 +1,8 @@
 # forEach Callback
 A simple package to add the forEachC property to all arrays that lets you perform an action on all elements of an array and then callback to a function when all are done.
 ## Usage
+    require("foreachcallback");
+    
 	let arr = [0, 1];
 	arr.forEachC((item, resolve) => {
 		//DO STUFF
@@ -10,7 +12,6 @@ A simple package to add the forEachC property to all arrays that lets you perfor
 	});
 
 ## Examples
-    require("foreachcallback");
     let arr = [0, 1];
     arr.forEachC((i, resolve) => {
 	    resolve(i + 1);
