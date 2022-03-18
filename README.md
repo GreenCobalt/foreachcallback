@@ -5,13 +5,19 @@ A simple package to add the forEachC property to all arrays that lets you perfor
     
 	let arr = [0, 1];
 	arr.forEachC((item, resolve) => {
-		//DO STUFF
-		resolve(result of stuff);
+		//do stuff here
+		let done = item + 1;
+
+		//resolve is the "return"
+		resolve(done);
 	}, (results) => {
 		//results = array of all results of stuff
+		console.log(results);
 	});
 
-## Examples
+	//Expected result: [1, 2]
+
+## Examples / Explanation
     let arr = [0, 1];
     arr.forEachC((i, resolve) => {
 	    resolve(i + 1);
